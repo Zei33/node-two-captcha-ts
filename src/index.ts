@@ -5,7 +5,7 @@ import { HTTPRequest } from './http_request.js';
 
 const baseUrl = 'https://2captcha.com/<action>.php';
 
-export class TwoCaptchaClient {
+export default class TwoCaptchaClient {
 	key: string;
 	timeout: number;
 	polling: number;
