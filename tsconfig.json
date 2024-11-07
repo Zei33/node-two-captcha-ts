@@ -1,0 +1,20 @@
+{
+	"include": ["src/**/*"],
+	"compilerOptions": {
+		"target": "es2022",
+		"module": "nodenext",
+		"rootDir": "./src",
+		"moduleResolution": "nodenext",
+		"baseUrl": "./",
+		"paths": {
+			"*": ["src/types/*"]
+		},
+		"typeRoots": ["./node_modules/@types", "./src/types"],
+		"declaration": true,
+		"outDir": "./dist",
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"strict": true,
+		"skipLibCheck": true
+	}
+}

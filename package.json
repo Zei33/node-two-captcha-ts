@@ -1,28 +1,40 @@
 {
-  "name": "@infosimples/node_two_captcha",
-  "version": "1.2.0",
+  "name": "node-two-captcha-ts",
+  "version": "1.0.0",
   "description": "Node.js package for easy integration with 2Captcha API (Captcha Solver as a Service)",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "fix": "eslint --fix",
+    "build": "tsc -p .",
+    "prepare": "npm run build",
     "generate_docs": "npx jsdoc -c ./jsdoc-config.json"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/infosimples/node_two_captcha"
+    "url": "https://github.com/Zei33/node-two-captcha-ts"
   },
   "keywords": [
     "api",
     "captcha",
     "two_captcha",
-    "2captcha"
+    "2captcha",
+    "typescript"
   ],
-  "author": "Adriano Dennanni",
+  "author": "Zei33",
   "license": "MIT",
-  "dependencies": {
-    "axios": "^0.21.1"
-  },
   "devDependencies": {
-    "jsdoc": "^3.5.5"
+    "@eslint/js": "^9.14.0",
+    "@types/node": "^22.9.0",
+    "eslint": "^9.14.0",
+    "eslint-config-love": "^97.0.0",
+    "globals": "^15.12.0",
+    "jsdoc": "^3.5.5",
+    "typescript": "^5.6.3",
+    "typescript-eslint": "^8.13.0"
+  },
+  "dependencies": {
+    "axios": "^1.7.7"
   }
 }
